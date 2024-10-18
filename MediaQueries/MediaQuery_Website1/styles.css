@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    height: 20vh;
+    width: 100%;
+    border: none;
+}
+
+nav .logo{
+    height: 60px;
+    width: 60px;
+    margin: 20px 100px;
+
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    margin-right: 100px;
+}
+
+nav ul li{
+    margin: -65px 20px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+section{
+    height: 80vh;
+    width: 100%;
+    border: none;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.textbox{
+    height: 40vh;
+    width: 400px;
+    border: none;
+    border-left: 10px solid rgb(255, 0, 76);
+    margin: 15vh 100px;
+    padding: 0px 20px;
+}
+
+#col1 h1{
+    font-size: 50px;
+}
+#col1 h2{
+    font-weight: lighter;
+    color: #333;
+}
+#col1 h5{
+    font-weight: lighter;
+    color: #838383;
+}
+#col1 h3{
+    font-weight: bold;
+}
+
+button{
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color:  rgb(255, 0, 76);
+    color: white;
+    border: none;
+}
+
+#col2{
+    display: flex;
+    justify-content: end;   
+    align-items: center;
+}
+#col2 .remote{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    right: 300px;
+}
+
+.pinkbox{
+    height: 50vh;
+    width: 500px;
+    background-color: rgb(255, 0, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.plus{
+    height: 50px;
+    width: 50px;
+}
+.pinkbox h4{
+    color: white;
+    position: absolute;
+    bottom: 180px;
+
+}
+
+/* @media (min-width: 50px) and (max-width:750){
+    section{
+        height: 80vh;
+        width: 100%;
+        border: none;
+    }
+    #col2{
+        perspective-origin: ;
+    }
+   
+    
+} */

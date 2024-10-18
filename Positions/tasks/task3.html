@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .frame{
+            height: 302px;
+            width: 302px;
+            border: 1px solid;
+            margin: 150px auto;
+        }
+
+        .child{
+            margin-left: 50px ;
+        }
+
+        #ball{
+            height: 50px;
+            width: 50px;
+            border: 1px solid transparent;
+            box-shadow: 0px 0px 10px black;
+            border-radius: 50%;
+            animation: slider infinite 3s linear ;
+            position: relative;
+            background-color: black;
+        }
+        #box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid transparent;
+            box-shadow: 0px 0px 8px;
+        }
+
+        @keyframes slider{
+            0%{
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+            }
+            50%{
+                top: 250px;
+                left: 200px;
+            }
+            75%{
+                top: 250px;
+                left: -50px;
+            }
+            100%{
+                top: 0px;
+                left: -50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="box child" id="ball"></div>
+        <div class="box child" id="box"></div>
+    </div>
+</body>
+</html>

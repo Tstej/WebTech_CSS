@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        div{
+            height: 100vh;
+            width: 100%;
+            border: none;
+            background-color: deepskyblue;
+        }
+
+        @media (min-width:50px) and (max-width:750px){
+            div{
+                background-color: deeppink;
+                height: 80vh;
+                width: 70%;
+                border: none;
+                margin: 10vh 15%;
+                border-radius: 20px;
+            }
+        }
+        @media (min-width:751px) and (max-width:1000px){
+            div{
+                background-color: yellowgreen;
+                height: 80vh;
+                width: 70%;
+                border: none;
+                margin: 10vh 15%;
+                border-radius: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

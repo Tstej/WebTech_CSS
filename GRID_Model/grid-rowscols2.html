@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100%;
+            border: none;
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid{
+            background-color: rgb(220, 185, 252);
+            text-align: center;
+            color: black;
+            padding: 30px;
+        }
+        #grid1{
+            grid-column: 1/3;
+        }
+        #grid3{
+            grid-row: 2/4;
+        }
+        #grid7{
+            grid-column: 1/3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid" id="grid1">Header</div>
+        <!-- <div class="grid" id="grid2">Header</div> -->
+        <div class="grid" id="grid3">Main</div>
+        <div class="grid" id="grid4">Right-Top</div>
+        <!-- <div class="grid" id="grid5">Main</div> -->
+        <div class="grid" id="grid6">Right-Bottom</div>
+        <div class="grid" id="grid7">Footer</div>
+        <!-- <div class="grid" id="grid8">Footer</div> -->
+    </div>
+</body>
+</html>

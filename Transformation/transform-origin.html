@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 250px;
+            border: 1px solid;
+            margin: 150px auto;
+            background-color: black;
+            perspective: 400px;
+        }
+        .child{
+            height: 298px;
+            width: 248px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 298px;
+            background-color: blueviolet;
+            color: white;
+            transform: rotateX(45deg);
+            animation: mirror 2s infinite linear;
+            transform-origin: top;
+        }
+
+        @keyframes mirror {
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child" id="child">
+            CHILD
+        </div>
+    </div>
+</body>
+</html>

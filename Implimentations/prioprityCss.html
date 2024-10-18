@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priority</title>
+    <!-- Whenever we use all three types together then, 
+         1. Inline css has first priority 
+         2. External css has second priority
+         3. Internal has last priority
+    -->
+    <style>
+        h1{
+            /* to set the priority use "!important" keyword along with the value */
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="./external.css">
+</head>
+<body>
+    <h1 style="color: blue;">hello world!!!!!!!</h1>
+</body>
+</html>

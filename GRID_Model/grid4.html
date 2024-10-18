@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(36, 128, 0);
+            display: grid;
+            grid-template-areas: 'h1 h1 h1 h1 h2 h2 h2 h2'
+                                 'l l me me me r r r'
+                                 'f1 f1 f1 f1 f2 f2 f2 f2';
+            gap: 20px;
+            padding: 20px;
+
+        }
+
+        .grid-items{
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: center;
+            padding: 25px;
+        }
+
+        #grid-item1{
+            grid-area: h1;
+        }
+        #grid-item2{
+            grid-area: l;
+        }
+        #grid-item3{
+            grid-area: me;
+        }
+        #grid-item4{
+            grid-area: r;
+        }
+        #grid-item5{
+            grid-area: f1;
+        }
+        #grid-item6{
+            grid-area: f2;
+        }
+        #grid-item7{
+            grid-area: h2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-items" id="grid-item1">HEADER1</div>
+        <div class="grid-items" id="grid-item7">HEADER2</div>
+        <div class="grid-items" id="grid-item2">LEFT</div>
+        <div class="grid-items" id="grid-item3">MENU</div>
+        <div class="grid-items" id="grid-item4">RIGHT</div>
+        <div class="grid-items" id="grid-item5">FOOTER1</div>
+        <div class="grid-items" id="grid-item6">FOOTER2</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Sibling Selector</title>
+    <!-- To target all the siblings in general.
+         SYNTAX: elderElement ~ youngerElement{
+                            key : value;
+                 } 
+    -->
+    <style>
+        h1~p{
+            background-color: palevioletred;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Super Elder brother</p>
+        <h1>Elder brother</h1>
+        <p>Younger brother</p>
+        <p>Super Younger brother</p>
+    </div>
+</body>
+</html>

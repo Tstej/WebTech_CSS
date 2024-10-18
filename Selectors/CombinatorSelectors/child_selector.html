@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child selector</title>
+    <!-- We can target child element with the help of parents reference.
+        SYNTAX: parentElement > childElement{
+                    key : value;
+                } 
+    -->
+
+    <style>
+        div>h1{
+            color: aqua;
+        }
+        div>p{
+            background-color: blueviolet;
+        }
+        body>h1{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Heading beta of div papa</h1>
+        <p>Div papa ki pari</p>
+    </div>
+    <h1>Heading beta from body mother</h1>
+</body>
+</html>

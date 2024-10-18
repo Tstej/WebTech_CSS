@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative position</title>
+    <!-- Takes the reference from its current position -->
+    <style>
+        .container{
+            height: 500px;
+            width: 50%;
+            border: 1px solid;
+            margin: 100px auto;
+            background-color: yellow;
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 100px;
+            display: inline-block;
+            background-color: red;
+            color: yellow;
+        }
+
+        #child1{
+            position: relative;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="child" id="child1">child1</div>
+        <div class="child" id="child2">child2</div>
+        <div class="child" id="child3">child3</div>
+        <div class="child" id="child4">child4</div>
+    </div>
+</body>
+</html>

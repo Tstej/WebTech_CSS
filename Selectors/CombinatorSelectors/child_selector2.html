@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1st priority to id */
+        #parent1>#head1{
+            color: red;
+        }
+        /* 2nd priority to class */
+        .parent1>.head1{
+            color: blue;
+        }
+        /* 3rd priority to element */
+        div>h1{
+            color: aqua;
+        }
+        /* 4th priority to universal */
+        *{
+            color: brown;
+        }
+
+        /* 1st priority to id>class */
+        #parent1>.head1{
+            background-color: red;
+            color: white;
+        }
+
+        /* 2nd priority to class>id */
+        #parent1>.head1{
+            background-color: blue;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent1" id="parent1">
+        <h1 class="head1" id="head1"></h1>
+    </div>
+    <div class="parent2" id="parent2">
+        <h1 class="head2" id="head2"></h1>
+    </div>
+</body>
+</html>

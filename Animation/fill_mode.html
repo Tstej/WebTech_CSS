@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .train{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            background-color: blueviolet;
+            line-height: 100px;
+            text-align: center;
+            color: white;
+            margin-top: 100px;
+            /* animation: train 3s 1 linear; */
+            animation-name: train;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+            animation-duration: 3s;
+        }
+
+        #train1{
+            animation-fill-mode: forwards;
+        }
+        #train2{
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes train {
+            from{
+                width: 100px;
+            }
+            to{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="train" id="train1">Forwords</div>
+    <div class="train" id="train2">Backwords</div>
+</body>
+</html>

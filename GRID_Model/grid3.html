@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(163, 0, 76);
+            display: grid;
+            grid-template-areas: 'h h h h h h h h'
+                'l l me me me r r r'
+                'f1 f1 f1 f1 f2 f2 f2 f2';
+            gap: 20px;
+            padding: 20px;
+
+        }
+
+        .grid-items {
+            background-color: rgba(255, 255, 255, 0.5);
+            text-align: justify;
+            overflow: scroll;
+            scrollbar-width: none;
+            padding: 20px;
+        }
+
+        #grid-item1 {
+            grid-area: h;
+        }
+
+        #grid-item2 {
+            grid-area: l;
+        }
+
+        #grid-item3 {
+            grid-area: me;
+        }
+
+        #grid-item4 {
+            grid-area: r;
+        }
+
+        #grid-item5 {
+            grid-area: f1;
+        }
+
+        #grid-item6 {
+            grid-area: f2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-items" id="grid-item1">HEADER
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores amet iusto odio numquam repellendus
+                suscipit dolorum sapiente omnis at, explicabo eligendi magnam libero accusamus, quisquam corporis
+                incidunt recusandae autem iure?</p>
+        </div>
+        <div class="grid-items" id="grid-item2">LEFT
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum, eaque ab doloribus
+                necessitatibus nisi ipsa suscipit natus doloremque eveniet maxime laudantium amet. Enim, voluptates. Cum
+                eaque nihil qui velit accusantium? Saepe corrupti laborum fuga deserunt? Ut numquam optio, harum
+                similique nostrum soluta, dolorum facilis nesciunt maxime voluptatem quibusdam commodi id vel natus
+                dolorem eos libero culpa sunt dolore eligendi iusto mollitia aut impedit veritatis. Culpa voluptates
+                eligendi quod vero tempore id ducimus quis asperiores, fugit facere recusandae molestias accusantium
+                aliquam. Consequuntur reprehenderit esse cum. Blanditiis possimus natus incidunt, reprehenderit
+                recusandae nesciunt ipsam sapiente aliquam pariatur eaque! Ipsa, possimus quas.</p>
+        </div>
+        <div class="grid-items" id="grid-item3">MENU 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum, eaque ab doloribus
+                necessitatibus nisi ipsa suscipit natus doloremque eveniet maxime laudantium amet. Enim, voluptates. Cum
+                eaque nihil qui velit accusantium? Saepe corrupti laborum fuga deserunt? Ut numquam optio, harum
+                similique nostrum soluta, dolorum facilis nesciunt maxime voluptatem quibusdam commodi id vel natus
+                dolorem eos libero culpa sunt dolore eligendi iusto mollitia aut impedit veritatis. Culpa voluptates
+                eligendi quod vero tempore id ducimus quis asperiores, fugit facere recusandae molestias accusantium
+                aliquam. Consequuntur reprehenderit esse cum. Blanditiis possimus natus incidunt, reprehenderit
+                recusandae nesciunt ipsam sapiente aliquam pariatur eaque! Ipsa, possimus quas.</p>
+        </div>
+        <div class="grid-items" id="grid-item4">RIGHT
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum, eaque ab doloribus
+                necessitatibus nisi ipsa suscipit natus doloremque eveniet maxime laudantium amet. Enim, voluptates. Cum
+                eaque nihil qui velit accusantium? Saepe corrupti laborum fuga deserunt? Ut numquam optio, harum
+                similique nostrum soluta, dolorum facilis nesciunt maxime voluptatem quibusdam commodi id vel natus
+                dolorem eos libero culpa sunt dolore eligendi iusto mollitia aut impedit veritatis. Culpa voluptates
+                eligendi quod vero tempore id ducimus quis asperiores, fugit facere recusandae molestias accusantium
+                aliquam. Consequuntur reprehenderit esse cum. Blanditiis possimus natus incidunt, reprehenderit
+                recusandae nesciunt ipsam sapiente aliquam pariatur eaque! Ipsa, possimus quas.</p>
+        </div>
+        <div class="grid-items" id="grid-item5">FOOTER1
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum, eaque ab doloribus
+                necessitatibus nisi ipsa suscipit natus doloremque eveniet maxime laudantium amet. Enim, voluptates. Cum
+                eaque nihil qui velit accusantium? Saepe corrupti laborum fuga deserunt? Ut numquam optio, harum
+                similique nostrum soluta, dolorum facilis nesciunt maxime voluptatem quibusdam commodi id vel natus
+                dolorem eos libero culpa sunt dolore eligendi iusto mollitia aut impedit veritatis. Culpa voluptates
+                eligendi quod vero tempore id ducimus quis asperiores, fugit facere recusandae molestias accusantium
+                aliquam. Consequuntur reprehenderit esse cum. Blanditiis possimus natus incidunt, reprehenderit
+                recusandae nesciunt ipsam sapiente aliquam pariatur eaque! Ipsa, possimus quas.</p>
+        </div>
+        <div class="grid-items" id="grid-item6">FOOTER2
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum voluptatum, eaque ab doloribus
+                necessitatibus nisi ipsa suscipit natus doloremque eveniet maxime laudantium amet. Enim, voluptates. Cum
+                eaque nihil qui velit accusantium? Saepe corrupti laborum fuga deserunt? Ut numquam optio, harum
+                similique nostrum soluta, dolorum facilis nesciunt maxime voluptatem quibusdam commodi id vel natus
+                dolorem eos libero culpa sunt dolore eligendi iusto mollitia aut impedit veritatis. Culpa voluptates
+                eligendi quod vero tempore id ducimus quis asperiores, fugit facere recusandae molestias accusantium
+                aliquam. Consequuntur reprehenderit esse cum. Blanditiis possimus natus incidunt, reprehenderit
+                recusandae nesciunt ipsam sapiente aliquam pariatur eaque! Ipsa, possimus quas.</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head" class="head">Last priority to Universal selector</h1>
+</body>
+</html>
+
+
+<!--  id    class   element   *      PRIORITY TO
+       Y      Y        Y      Y    : ID
+       N      Y        Y      Y    : CLASS
+       N      N        Y      Y    : ELEMENT
+       N      N        N      Y    : *
+       Y      N        N      Y    : ID  
+       Y      N        N      Y    : * (by using !imporatant)
+-->

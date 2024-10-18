@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 300px;
+            width: 250px;
+            border: 1px solid;
+            margin: 150px auto;
+            background-color: black;
+            perspective: 400px;
+        }
+        .child1{
+            height: 298px;
+            width: 248px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 298px;
+            background-color: blueviolet;
+            color: white;
+            transform: rotateX(45deg);
+            animation: mirror 2s infinite linear;
+            /* transform-origin: top; */
+        }
+        .child2{
+            height: 298px;
+            width: 248px;
+            border: 1px solid;
+            text-align: center;
+            line-height: 298px;
+            background-color: blueviolet;
+            color: white;
+            transform: rotateX(45deg);
+            animation: mirror1 2s infinite linear;
+            /* transform-origin: top; */
+        }
+
+
+        /* Skew: It will change position as well as size of an object */
+        @keyframes mirror {
+            from{
+                transform: skewX(0deg);
+            }
+            to{
+                transform: skewX(360deg);
+            }
+        }
+        @keyframes mirror1 {
+            from{
+                transform: skewY(0deg);
+            }
+            to{
+                transform: skewY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child1" id="child">
+            CHILD 1
+        </div>
+        <br><br>
+        <div class="child2" id="child">
+            CHILD 1
+        </div>
+    </div>
+</body>
+</html>

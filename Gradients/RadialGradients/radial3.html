@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grad{
+            height: 100vh;
+            width: 100%;
+            border: 1px solid;
+            margin: 10px auto;
+        }
+        #grad1{
+            background-image: repeating-radial-gradient(pink, blue 10%, yellow 15%);
+        }
+        #grad2{
+            background-image: repeating-radial-gradient(circle, pink, blue 10%, yellow 15%);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grad" id="grad1">
+        <h2>repeating-radial-gradient(pink, blue 10%, yellow 15%);</h2>
+    </div>
+    <div class="grad" id="grad2">
+        <h2>repeating-radial-gradient(circle, pink, blue 10%, yellow 15%);</h2>
+    </div>
+</body>
+</html>

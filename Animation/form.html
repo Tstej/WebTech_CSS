@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 1px solid;
+            border-radius: 50%;
+            position: relative;
+            animation-name: formballs;
+            animation-timing-function: linear;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+        }
+        #box1{
+            background-color: darkcyan;
+            left: 550px;
+        }
+        #box3{
+            background-color: darkorchid;
+            left: 700px;
+        }
+
+        #box2{
+            height: 400px;
+            width: 300px;
+            border: none;
+            border-radius: 30px;
+            margin-left: 525px;
+            position: absolute;
+            z-index: 1;
+            color: white;
+        }
+        #box2:hover{
+            box-shadow: 0px 0px 10px, 0px 0px 20px, 0px 0px 30px, 0px 0px 40px, 0px 0px 50px;
+        }
+
+        input{
+            height: 40px;
+            width: 250px;
+            margin: 25px 25px;
+            background-color: transparent;
+            outline: none;
+            border-radius: 20px;
+            color: white;
+        }
+
+        @keyframes formballs {
+            form{
+                transform: translateY(0px);
+            }
+            to{
+                transform: translateY(400px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box2" id="box2">
+        <form action="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+
+            <input type="submit" value="SUBMIT">
+            <input type="reset" value="RESET">
+        </form>
+    </div>
+    <div class="box" id="box3"></div>
+</body>
+</html>
